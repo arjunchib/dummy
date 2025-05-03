@@ -1,1 +1,5 @@
-console.log("Hello via Bun!");
+Bun.serve({
+  fetch() {
+    return new Response("Hello, world!");
+  },
+});
